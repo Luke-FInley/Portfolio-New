@@ -220,7 +220,7 @@ nav {
 }
 
 .attributes, .name {
-    height: 20vh;
+    height: 15vh;
 }
 
 .name {
@@ -244,7 +244,7 @@ nav {
 
 
 .project-title {
-    font-size: 7.5vw;
+    font-size: 9vw;
 }
 .project-attributes {
     width: 100%;
