@@ -1,0 +1,263 @@
+body {
+    background-color: #333d3f;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: #20292b;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    margin: 0;
+    height: 5vh;
+}
+#navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+    z-index: 99999999;
+}
+
+.home-button,.contact-button {
+    width: 50%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    transition: .75s;
+    opacity: .6;
+}
+.home-button:hover, .contact-button:hover {
+    scale: 1.2;
+    opacity: 1;
+}
+
+.title .project-text-main{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.contacts-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.linkedin,.email,.phone{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#linkedin {
+    cursor: pointer;
+}
+.contact-title{
+    height: 20vh;
+    width: 100%;
+    justify-content: center;
+    align-items: end;
+    display: flex;
+    color: #fff;
+    font-size: 3vw;
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+.contact-subtext {
+    height: 5vh;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    color: #fff;
+    font-size: 1.2vw;
+}
+
+
+.name, .attributes {
+    display: flex;
+    height: 30vh;
+}
+.project-title, .project-attributes {
+    display: flex;
+    height: 20vh;
+}
+
+.name, .project-title{
+    color: #fff;
+    align-items:end;
+    justify-content: center;
+    font-size: 5vw;
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+
+.attributes, .project-attributes{
+    flex-direction: row;
+    justify-content: center;
+}
+.attribute {
+    width: 20%;
+    color: #fff;
+    align-items: start;
+    text-align: center;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+/* .producer,.designer,.story-teller{
+     animation-name: pulse;
+    animation-duration: 9s;
+    animation-iteration-count: infinite; 
+} */
+.producer {
+    font-weight: bold;
+}
+.designer{
+    font-style: italic;
+    animation-delay: 3s;
+}
+.story-teller{
+    font-weight: bold;
+    font-style: italic;
+    animation-delay: 6s;
+}
+
+/* @keyframes pulse {
+    0% {font-size: 2vw;}
+    16% {font-size: 2.5vw;}
+    32% {font-size: 2vw;}
+    100% {font-size: 2vw;}
+} */
+
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 0;
+    column-gap: 0;
+}
+
+.project {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    transition: .75s;
+    cursor: pointer;
+}
+.project:hover {
+    scale: 0.9;
+}
+
+.project-description {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    text-align: center;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    font-size: 3vh;
+        margin-bottom: 4vh;
+
+}
+.project-text-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-attributes {
+    width: 50%;
+    height: 15vh;
+}
+.attribute {
+    width: 33%;
+}
+
+.project-images, .project-embeds {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.images, .embeds{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        margin-bottom: 4vh;
+
+}
+.embeds {
+    height: 100%;
+}
+.embed{
+    aspect-ratio: 16/9;
+    width: 50%;
+}
+.image {
+    width: 50%;
+}
+
+
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+  
+.project {
+    width: 50%;
+}
+
+.attribute {
+    width: 25%;
+    font-size: 4vw;
+}
+
+.attributes, .name {
+    height: 20vh;
+}
+
+.name {
+    font-size: 7.5vw;
+}
+
+nav {
+    height: 8vh;
+}
+
+.home-button,.contact-button {
+    font-size: 120%;
+}
+
+.contact-title {
+    font-size: 8vw;
+}
+.contact-subtext {
+    font-size: 4vw;
+}
+
+
+.project-title {
+    font-size: 7.5vw;
+}
+.project-attributes {
+    width: 100%;
+}
+
+.project-description {
+    font-size: 2.5vh;
+    width: 75%;
+}
+
+.embed, .image {
+    width: 80%;
+}
+
+
+}
