@@ -43,9 +43,10 @@ document.getElementById("project9").addEventListener("click", project9);
 function project9() {
     window.location.href = "project9.html";
 }
-
-
-
+document.getElementById("project10").addEventListener("click", project10);
+function project10() {
+    window.location.href = "project10.html";
+}
 
 
 // document.getElementById("linkedin").addEventListener("click", linkedin);
